@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eskimo</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eskimo</title>
 
-  <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
-</head>
-<body>
-  <header>
-    <h1>Eskimo</h1>
-    <p></p>
-  </header>
-  <main>
-    <select name="" id="" disabled="disabled"></select>
-  </main>
-  <script src="main.js"></script>
-</body>
+    <!-- New CSS -->
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Eskimo</h1>
+      <p>
+        Get dog image based on dog breed. Uses the
+        <a href="https://dog.ceo/dog-api/" target="_blank">Dog API</a>
+      </p>
+    </header>
+
+    <main>
+      <!-- Input:Select -->
+      <label for="data-breed-list">Select breed</label>
+      <select name="" id="data-breed-list">
+        <option value="" disabled>Select Dog</option>
+        <!-- <option value="">Labra</option>
+        <option value="">Shephard</option>
+        <option value="">Huskey</option> -->
+      </select>
+
+      <br />
+      <!-- Render -->
+      <img src="https://placehold.co/300" alt="Placeholder image" />
+    </main>
+
+    <script type="module" src="src/js/main.js"></script>
+  </body>
 </html>
